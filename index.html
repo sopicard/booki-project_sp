@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+      <img class="logo" src="assets/img/logo/Booki.png" alt="blue booki logo">
+      <nav class="navbar">
+        <ul class="menu">
+            <li class="li-menu-one"><a class="menu-one" href="#locations-called">Hébergements</a></li>
+            <li class="li-menu-two"><a class="menu-two" href="#activité">Activités</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-page">
+      <section class="research">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="presentation">En plein centre-ville ou en pleine nature</p>
+
+        <!-- search bar by location -->
+        <div class="form-container">
+          <!-- first version : research part isn't functional  -->
+          <i class="location-icon fa-solid fa-location-dot"></i>
+          <form class="form-search" action="traitement.php">
+            <input type="text" name="location" id="location" placeholder="Marseille, France">
+          <button class="button-search" type="submit">Rechercher</button>
+          </form>
+        </div>
+
+        <!-- filters -->
+        <div class="filters-container">
+          <div class="filters-title">
+            <h2 class="filters-called">Filtres</h2>
+          </div>
+          <div class="filter-choice">
+            <i class="filter-icon fa-solid fa-money-bill-wave"></i>
+            <a href="" class="filter-a">Economique</a>
+          </div>
+          <div class="filter-choice">
+            <i class="filter-icon fa-solid fa-child"></i>
+            <a href="" class="filter-a">Familial</a>
+          </div>
+          <div class="filter-choice">
+            <i class="filter-icon fa-solid fa-heart"></i>
+            <a href="" class="filter-a">Romantique</a>
+          </div>
+          <div class="filter-choice">
+            <i class="filter-icon fa-solid fa-dog"></i>
+            <a href="" class="filter-a">Animaux autorisés</a>
+          </div>
+        </div>
+
+        <!-- informations about locations available -->
+        <div class="info-container">
+          <div class="info-container-icon">
+            <i class="info-icon fa-sharp fa-xs fa-solid fa-info"></i>
+          </div>
+          <div class="info-container-p">
+            <p class="info-p">Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
+        </div>
+      </section>
+
+      <article class="article-container">
+        <div class="locations-container">
+          <div class="locations-title">
+            <h2 id="locations-called">Hébergements à Marseille</h2>
+          </div>
+           <!-- first line of 3 blocks -->
+          <div class="locations-blocks">
+            <div class="block">
+              <img src="" alt="">
+              <p>Auberge La Canebière</p>
+              <p>Nuit à partir de 25€</p>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="block">
+              <img src="" alt="">
+              <p>Hôtle du port</p>
+              <p>Nuit à partir de 52€</p>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="block">
+              <img src="" alt="">
+              <p>Hôtel Les Mouettes</p>
+              <p>Nuit à partir de 76€</p>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          <!-- second line of 3 blocks -->
+          <div class="locations-blocks">
+            <div class="block">
+              <img src="" alt="">
+              <p>Hôtel de la mer</p>
+              <p>Nuit à partir de 46€</p>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="block">
+              <img src="" alt="">
+              <p>Auberge Le Panier</p>
+              <p>Nuit à partir de 23€</p>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="block">
+              <img src="" alt="">
+              <p>Hôtel Chez Amina</p>
+              <p>Nuit à partir de 96€</p>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="locations-more">
+            <a>
+              Afficher plus
+            </a>
+          </div>
+        <div class="famous-container">
+          <div class="famous-title">
+            <h2 class="famous-called">Les plus populaires</h2>          
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <!-- first column of 3 blocks -->
+          <div class="locations-blocks">
+            <div class="block">
+              <div class="block-container-img">
+                <img class="block-img" src="" alt="">
+              </div>
+              <div class="block-container-text">
+                <p>Hôtel Le soleil du matin</p>
+                <p>Nuit à partir de 128€</p>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-container-img">
+                <img class="block-img" src="" alt="">
+              </div>
+              <div class="block-container-text">
+                <p>Chambres d'hôtes Au coeur de l'eau</p>
+                <p>Nuit à partir de 71€</p>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-container-img">
+                <img class="block-img" src="" alt="">
+              </div>
+              <div class="block-container-text">
+                <p>Hôtel Bleu et Blanc</p>
+                <p>Nuit à partir de 68€</p>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <h2 id="activité">Activités à Marseille</h2>
+      
+
+      <article>
+        
+      </article>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4ebe5d99d1.js" crossorigin="anonymous"></script>
+</body>
+</html>
