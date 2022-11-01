@@ -1,6 +1,6 @@
 * {
     margin: 0
-  }
+}
 
   @font-face {
     font-family: "Raleway-Regular";
@@ -77,18 +77,17 @@
     margin: 20px 0px 0px 50px;
   }
 
-  .research .location-icon, .button-search {
-    padding: 10px;
+  .research .form-search {
+    height: 49px;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
   }
 
   .research .location-icon {
+    padding: 16px 20px;
     border: 1px solid #f2f2f2;
     border-radius: 10px 0px 0px 10px;
     background-color: #f2f2f2;
-  }
-
-  .research .form-search {
-    border: 1px solid #f2f2f2;
   }
 
   .research #location {
@@ -99,10 +98,12 @@
     padding-left: 10px;
     color: black;
   }
+
   .research .button-search {
     font-family: "Raleway-Regular", sans-serif;
     font-weight: 700;
     font-size: 18px;
+    padding: 13px 15px;
     border: 1px solid #0065fc;
     border-radius: 0px 10px 10px 0px;
     background-color: #0065fc;
@@ -179,3 +180,153 @@
     font-weight: 400;
     font-size: 16px;
   }
+
+  /* LOCATIONS */
+
+  .article-container {
+    display: flex;
+    margin: 30px 0px 0px 50px;
+  }
+
+  .locations-container {
+    width: 70%;
+  }
+
+  .famous-container {
+    width: 30%;
+    margin: 0px 30px 0px 30px;
+  }
+  .locations-container, .famous-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+  }
+
+  #locations-called, .famous-called {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 20px 30px 0px 30px;
+  }
+  .first-locations-blocks, .second-locations-blocks {
+    margin: 15px;
+    display: flex;
+  }
+
+  .location-block {
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  }
+  .location-img {
+    width: 95%;
+    height: 124px;
+    border: 5px solid white;
+    border-bottom: none;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+  }
+
+  .location-p-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 5px 20px;
+  }
+
+  .location-p {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 5px 20px;
+  }
+  .locations-more {
+    margin: 10px 0px 0px 30px;
+  }
+
+  .locations-more-a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .locations-stars, .famous-stars {
+    color: #0065fc;
+  }
+
+  .locations-stars :nth-child(6), .famous-stars :nth-child(6){
+    color: #f2f2f2;
+  }
+
+  .locations-stars {
+    margin: 5px 10px 10px 20px;
+  }
+
+  /* FAMOUS  */
+  
+  .famous-title {
+    display: flex;
+  }
+  
+  .fa-chart-line {
+    margin: 30px 0px 0px 70px;
+    color: #0065fc;
+  }
+
+  .famous-block {
+    height: 144px;
+    margin: 30px 30px 50px 30px;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .famous-container-img {
+    width: 40%;
+    height: 135px;
+  }
+
+  .famous-container-text {
+    width: 60%;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .famous-img {
+    width: 100%;
+    height: 134px;
+    border: 5px solid white;
+    border-right: none;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+  }
+
+  .famous-p-title{
+    font-weight: 700;
+    font-size: 16px;
+    margin: 20px 0px 5px 0px;
+  }
+
+  .famous-p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .famous-stars {
+    margin-top: 50px;
+  }
+
+  .famous-stars1, .famous-stars2{
+    margin-top: 30px;
+  }
+  
+  .euros {
+    font-weight: bold;
+  }
+
+  /* @media screen and (max-width: 768px) {
+
+  } */
+
