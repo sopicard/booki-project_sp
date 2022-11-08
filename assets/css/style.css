@@ -25,87 +25,79 @@
     justify-content: space-between;
   }
 
-  .header .logo {
-    width: 61.09px;
-    height: 19px;
+  .logo {
+    width: 3.818rem;
+    height: 1.188rem;
     padding: 50px;
   }
 
-  .header .menu {
+  .menu {
     height: 100%;
     display: flex;
     align-items: center;
     margin-right: 50px;
   }
 
-  .header .li-menu-one, .li-menu-two {
+  .menu-li {
     list-style-type: none;
   }
 
-  .header .menu-one, .menu-two {
+  .menu-a {
     padding: 48px 25px 48px 25px;
     text-decoration: none;
     color: black;
-    font-family: "Raleway-Regular", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
   }
 
-  .header .menu-one:hover, .menu-two:hover {
+  .menu-a:hover {
     color: #0065fc;
     border-top: 2px  solid #0065fc;
   }
 
-  /* MAIN // RESEARCH*/   
-  .research h1 {
-    font-family: "Raleway-Regular", sans-serif;
+  /* MAIN // RESEARCH */   
+  .main-title {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-left: 50px;
   }
 
-  .research .presentation {
-    font-family: "Raleway-Regular", sans-serif;
+  .presentation {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     margin-left: 50px;
     padding-top: 10px;
   }
 
-  .research .form-container {
+  .form-container {
     display: flex;
     margin: 20px 0px 0px 50px;
   }
 
-  .research .form-search {
-    height: 49px;
+  .form-search {
     border: 1px solid #f2f2f2;
-    border-radius: 10px;
   }
 
-  .research .location-icon {
-    padding: 16px 20px;
-    border: 1px solid #f2f2f2;
-    border-radius: 10px 0px 0px 10px;
+  .location-icon {
+    padding: 20px;
+    border-radius: 15px 0px 0px 15px;
     background-color: #f2f2f2;
   }
 
-  .research #location {
-    font-family: "Raleway-Regular", sans-serif;
+  #location {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     border: none;
-    padding-left: 10px;
+    padding: 15px;
     color: black;
   }
 
-  .research .button-search {
-    font-family: "Raleway-Regular", sans-serif;
+  .button-search {
     font-weight: 700;
-    font-size: 18px;
-    padding: 13px 15px;
+    font-size: 1.125rem;
+    padding: 15px;
     border: 1px solid #0065fc;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 15px 15px 0px;
     background-color: #0065fc;
     color: white;
   }
@@ -122,9 +114,8 @@
   }
 
   .filters-called {
-    font-family: "Raleway-Regular", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .filter-choice {
@@ -148,9 +139,8 @@
   .filter-a {
     text-decoration: none;
     color: black;
-    font-family: "Raleway-Regular", sans-serif;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.063rem;
     padding: 5px;
   }
 
@@ -163,8 +153,8 @@
   .info-container-icon {
     margin-right: 10px;
     padding-top: 2px;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     border: 1px solid #d9d9d9;
     border-radius: 50%;
     text-align: center;
@@ -175,10 +165,9 @@
   }
 
   .info-p {
-    font-family: "Raleway-Regular", sans-serif;
     padding-top: 4px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   /* LOCATIONS */
@@ -188,15 +177,20 @@
     margin: 30px 0px 0px 50px;
   }
 
-  .locations-container {
-    width: 70%;
-  }
-
   .famous-container {
     width: 30%;
     margin: 0px 30px 0px 30px;
   }
-  .locations-container, .famous-container {
+  .locations-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .famous-container {
     display: flex;
     flex-direction: column;
     border: 1px solid #f2f2f2;
@@ -204,26 +198,30 @@
     background-color: #f2f2f2;
   }
 
-  #locations-called, .famous-called {
-    font-weight: 700;
-    font-size: 22px;
-    margin: 20px 30px 0px 30px;
-  }
-  .first-locations-blocks, .second-locations-blocks {
-    margin: 15px;
+  .locations-blocks {
     display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
   }
 
-  .location-block {
-    width: 30%;
+  #locations-called, .famous-called {
+    font-weight: 700;
+    font-size: 1.375rem;
+    margin: 20px 30px 0px 30px;
+  }
+
+  .location-card {
+    max-width: 30%;
+    flex: 1 0 33%;
+    box-sizing: border-box;
+    aspect-ratio: 2/1;
     background-color: white;
     border-radius: 20px;
-    margin: 15px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
   }
   .location-img {
-    width: 95%;
-    height: 124px;
+    width: 96%;
+    height: 60%;
     border: 5px solid white;
     border-bottom: none;
     border-radius: 20px 20px 0px 0px;
@@ -232,13 +230,13 @@
 
   .location-p-title {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 5px 20px;
   }
 
   .location-p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 5px 20px;
   }
   .locations-more {
@@ -249,7 +247,7 @@
     text-decoration: none;
     color: black;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .locations-stars, .famous-stars {
@@ -275,7 +273,7 @@
     color: #0065fc;
   }
 
-  .famous-block {
+  .famous-card {
     height: 144px;
     margin: 30px 30px 50px 30px;
     display: flex;
@@ -305,13 +303,13 @@
 
   .famous-p-title{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 20px 0px 5px 0px;
   }
 
   .famous-p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   
   .famous-stars {

@@ -14,11 +14,11 @@
       <img class="logo" src="assets/img/logo/Booki.png" alt="blue booki logo">
       <nav class="navbar">
         <ul class="menu">
-          <li class="li-menu-one">
-            <a class="menu-one" href="#locations-called">Hébergements</a>
+          <li class="menu-li">
+            <a class="menu-a" href="#locations-called">Hébergements</a>
           </li>
-          <li class="li-menu-two">
-            <a class="menu-two" href="#activities">Activités</a>
+          <li class="menu-li">
+            <a class="menu-a" href="#activities">Activités</a>
           </li>
         </ul>
       </nav>
@@ -26,17 +26,17 @@
 
     <main class="main-page">
       <section class="research">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="presentation">En plein centre-ville ou en pleine nature</p>
 
         <!-- search bar by location -->
         <div class="form-container">
           <!-- first version : research part isn't functional  -->
-          <form class="form-search" action="traitement.php">
-            <i class="location-icon fa-solid fa-location-dot"></i>
+          <i class="location-icon fa-solid fa-location-dot"></i>
+          <form class="form-search" action="traitement.php"> 
             <input type="text" name="location" id="location" value="Marseille, France">
-            <button class="button-search" type="submit">Rechercher</button>
-          </form> 
+          </form>
+          <button class="button-search" type="submit">Rechercher</button> 
         </div>
 
         <!-- filters -->
@@ -78,9 +78,9 @@
           <div class="locations-title">
             <h2 id="locations-called">Hébergements à Marseille</h2>
           </div>
-           <!-- first line of 3 blocks -->
-          <div class="first-locations-blocks">
-            <div class="location-block">
+          <div class="locations-blocks">
+            <!-- first line of 3 blocks -->
+            <div class="location-card">
               <img class="location-img" src="assets/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="bunk bed view">
               <p class="location-p-title">Auberge La Canebière</p>
               <p class="location-p">Nuit à partir de 25<span class="euros">€</span></p>
@@ -93,7 +93,7 @@
                 <i class="fa-solid fa-star"></i>
               </p>
             </div>
-            <div class="location-block">
+            <div class="location-card">
               <img class="location-img" src="assets/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="twin beds view">
               <p class="location-p-title">Hôtel du port</p>
               <p class="location-p">Nuit à partir de 52<span class="euros">€</span></p>
@@ -106,7 +106,7 @@
                 <i class="fa-solid fa-star"></i>
               </p>
             </div>
-            <div class="location-block">
+            <div class="location-card">
               <img class="location-img" src="assets/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="bedroom view">
               <p class="location-p-title">Hôtel Les Mouettes</p>
               <p class="location-p">Nuit à partir de 76<span class="euros">€</span></p>
@@ -119,10 +119,8 @@
                 <i class="fa-solid fa-star"></i>
               </p>
             </div>
-          </div>  
-          <!-- second line of 3 blocks -->
-          <div class="second-locations-blocks">
-            <div class="location-block">
+            <!-- second line of 3 blocks -->
+            <div class="location-card">
               <img class="location-img" src="assets/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="bedroom view main color turquoise">
               <p class="location-p-title">Hôtel de la mer</p>
               <p class="location-p">Nuit à partir de 46<span class="euros">€</span></p>
@@ -135,7 +133,7 @@
                 <i class="fa-solid fa-star"></i>
               </p>
             </div>
-            <div class="location-block">
+            <div class="location-card">
               <img class="location-img" src="assets/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="dormitory wood deco">
               <p class="location-p-title">Auberge Le Panier</p>
               <p class="location-p">Nuit à partir de 23<span class="euros">€</span></p>
@@ -148,7 +146,7 @@
                 <i class="fa-solid fa-star"></i>
               </p>
             </div>
-            <div class="location-block">
+            <div class="location-card">
               <img class="location-img" src="assets/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="double large beds">
               <p class="location-p-title">Hôtel Chez Amina</p>
               <p class="location-p">Nuit à partir de 96<span class="euros">€</span></p>
@@ -174,8 +172,8 @@
             <i class="fa-solid fa-chart-line"></i>
           </div>
           <!-- first column of 3 blocks -->
-          <div class="blocks">
-            <div class="famous-block">
+          <div class="famous-blocks">
+            <div class="famous-card">
               <div class="famous-container-img">
                 <img class="famous-img" src="assets/img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="large bed and green bedroom">
               </div>
@@ -193,7 +191,7 @@
                 </p>
               </div>
             </div>
-            <div class="famous-block">
+            <div class="famous-card">
               <div class="famous-container-img">
                 <img class="famous-img" src="assets/img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="large bed and apartment view">
               </div>
@@ -210,7 +208,7 @@
                 </p>
               </div>
             </div>
-            <div class="famous-block">
+            <div class="famous-card">
               <div class="famous-container-img">
                 <img class="famous-img" src="assets/img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="bedroom view">
               </div>
