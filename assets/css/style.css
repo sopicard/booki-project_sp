@@ -13,6 +13,7 @@
   }
   
   body {
+    margin: auto;
     max-width: 1400px;
     padding: 0;
     box-sizing: border-box;
@@ -102,6 +103,14 @@
     color: white;
   }
 
+  .button-span {
+    display: block;
+  }
+
+  .button-i {
+    display: none;
+  }
+
   /* FILTERS */
   .filters-container {
     display: flex;
@@ -170,17 +179,15 @@
     font-size: 1rem;
   }
 
-  /* LOCATIONS */
+  /* ARTICLE */
 
-  .article-container {
+  .first-article {
     display: flex;
     margin: 30px 0px 0px 50px;
   }
 
-  .famous-container {
-    width: 30%;
-    margin: 0px 30px 0px 30px;
-  }
+  /* LOCATIONS */
+
   .locations-container {
     width: 70%;
     display: flex;
@@ -190,35 +197,32 @@
     background-color: #f2f2f2;
   }
 
-  .famous-container {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #f2f2f2;
-    border-radius: 20px;
-    background-color: #f2f2f2;
-  }
-
   .locations-blocks {
     display: flex;
     flex-wrap: wrap;
-    margin: 30px;
+    justify-content: space-around;
+    align-content: flex-start;
+    margin: 30px 30px 0px 30px;
   }
 
-  #locations-called, .famous-called {
+  #locations-title, .famous-title {
     font-weight: 700;
     font-size: 1.375rem;
-    margin: 20px 30px 0px 30px;
+    margin: 30px 30px 0px 30px;
   }
 
   .location-card {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: black;
     max-width: 30%;
-    flex: 1 0 33%;
     box-sizing: border-box;
-    aspect-ratio: 2/1;
+    aspect-ratio: 3/2;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
   }
+
   .location-img {
     width: 96%;
     height: 60%;
@@ -240,7 +244,7 @@
     margin: 5px 20px;
   }
   .locations-more {
-    margin: 10px 0px 0px 30px;
+    margin: 0px 0px 30px 30px;
   }
 
   .locations-more-a {
@@ -248,6 +252,7 @@
     color: black;
     font-weight: 700;
     font-size: 1.125rem;
+    text-align: justify;
   }
 
   .locations-stars, .famous-stars {
@@ -263,38 +268,46 @@
   }
 
   /* FAMOUS  */
+
+  .famous-container {
+    width: 30%;
+    margin: 0px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+  }
   
-  .famous-title {
+  .famous-container-title {
     display: flex;
   }
   
   .fa-chart-line {
-    margin: 30px 0px 0px 70px;
+    margin: 40px 0px 0px 70px;
     color: #0065fc;
   }
 
   .famous-card {
-    height: 144px;
-    margin: 30px 30px 50px 30px;
     display: flex;
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+    max-height: 30%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.3);
   }
-  
-  .famous-container-img {
-    width: 40%;
-    height: 135px;
-  }
 
   .famous-container-text {
     width: 60%;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 2px 0px 20px;
   }
 
   .famous-img {
-    width: 100%;
-    height: 134px;
+    width: 40%;
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
     border: 5px solid white;
     border-right: none;
     border-radius: 20px 0px 0px 20px;
@@ -304,7 +317,7 @@
   .famous-p-title{
     font-weight: 700;
     font-size: 1rem;
-    margin: 20px 0px 5px 0px;
+    margin: 10px 0px 5px 0px;
   }
 
   .famous-p {
@@ -313,18 +326,89 @@
   }
   
   .famous-stars {
-    margin-top: 50px;
-  }
-
-  .famous-stars1, .famous-stars2{
-    margin-top: 30px;
+    margin-top: 35px;
   }
   
+  .famous-stars3 {
+    margin-top: 55px;
+  }
+
   .euros {
     font-weight: bold;
   }
 
-  /* @media screen and (max-width: 768px) {
+  /* ACTIVITIES */
 
-  } */
+  #activities {
+    font-weight: 700;
+    font-size: 1.375rem;
+    margin: 50px 00px 0px 50px;
+  }
+
+  .activities-blocks {
+    display: flex;
+    margin: 30px;
+  }
+  .activity-card {
+    margin-left: 30px;
+    width: 25%;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .activity-img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    box-sizing: border-box;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
+
+  .activity-p {
+    width: 90%;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  @media screen and (max-width: 991px ) {
+
+    .button-span {
+      display: none;
+    }
+
+    .button-i {
+      display:block
+    }
+
+    .first-article {
+      flex-direction: column;
+      margin: 30px;
+    }
+
+    .locations-container, .famous-container {
+      width: 100%
+    }
+
+    .locations-container {
+      margin-bottom: 30px;
+    }
+
+    .famous-container {
+      margin: 0;
+    }
+
+  }
+    
+  @media screen and (max-width: 767px) {
+
+    .button-span {
+      display: none;
+    }
+
+    .button-i {
+      display:block
+    }
+  }
 
